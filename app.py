@@ -1,3 +1,8 @@
+
+from comment_checker import check_kyedae_comment
+from TikTokLive import TikTokLiveClient
+from TikTokLive.events import CommentEvent
+
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "True"
 
@@ -6,9 +11,6 @@ import pygame
 import threading
 import tkinter as tk
 
-from comment_checker import check_kyedae_comment
-from TikTokLive import TikTokLiveClient
-from TikTokLive.events import CommentEvent
 
 client = None
 username = ""

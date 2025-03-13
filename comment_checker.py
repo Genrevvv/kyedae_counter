@@ -1,6 +1,6 @@
-import re
-
 from fuzzywuzzy import fuzz
+
+import re
 
 
 def check_kyedae_comment(string_comment):
