@@ -3,11 +3,9 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "True"
 
 import asyncio
 import pygame
-import re
 import threading
 import tkinter as tk
 
-from fuzzywuzzy import fuzz
 from comment_checker import check_kyedae_comment
 from TikTokLive import TikTokLiveClient
 from TikTokLive.events import CommentEvent

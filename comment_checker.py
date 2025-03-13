@@ -21,7 +21,7 @@ def check_kyedae_comment(string_comment):
             substring = string_comment[i:len(spelling) + i]                
             # print(f"{substring} : {spelling}")
 
-            if fuzz.ratio(substring, spelling) >= 70:
+            if fuzz.ratio(substring, spelling) >= 70 and substring.startswith("k"):
                 print(f"\033[1mfuzz ratio: {fuzz.ratio(substring, spelling)}\033[0m")
                 return True
 
@@ -30,7 +30,7 @@ def check_kyedae_comment(string_comment):
 
 
 def main():
-    if check_kyedae_comment("kilala nio posi..kyeddae"):
+    if check_kyedae_comment("di ka kamo nadedetect comment mo sa program hahaa"):
         print("Kyedae comment FOUND")
     else:
         print("Kyedae comment NOT FOUND")
