@@ -1,3 +1,4 @@
+![kyedae_counter logo](media_files/kc_loading_logo.png)
 ## What is kyedae_counter?
 A program that counts "kyedae", "kyadae", and "kaede" comments on a tiktok livestream's comment section.
 
