@@ -13,7 +13,7 @@ def check_kyedae_comment(string_comment):
     for spelling in spellings:
 
         for word in string_comment:
-            print(f"{word} : {spelling}")
+            # print(f"{word} : {spelling}")
             
             if word == spelling:
                 return True
