@@ -9,8 +9,6 @@ def check_kyedae_comment(string_comment):
     string_comment = string_comment.split()
 
     spellings = ["kyedae", "kyadae", "kaede"]
-
-    substring = ""
     
     for spelling in spellings:
 
@@ -19,8 +17,8 @@ def check_kyedae_comment(string_comment):
             
             if word == spelling:
                 return True
-            elif fuzz.ratio(substring, spelling) >= 70 and substring.startswith("k"):
-                print(f"\033[1mfuzz ratio: {fuzz.ratio(substring, spelling)}\033[0m")
+            elif fuzz.ratio(word, spelling) >= 70 and word.startswith("k"):
+                print(f"\033[1mfuzz ratio: {fuzz.ratio(word, spelling)}\033[0m")
                 return True
 
     return False
