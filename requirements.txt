@@ -1,0 +1,4 @@
+fuzzywuzzy==0.18.0
+pygame==2.6.0
+TikTokLive==6.4.4
+TikTokLive==6.4.4
